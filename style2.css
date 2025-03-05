@@ -1,0 +1,256 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #56C6A5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a893;
+}
+
+/* Header Section */
+.header-background {
+    background-color: #56C6A5;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-links a,
+.auth-links a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.signup-btn {
+    background-color: #ffffff;
+    color: #56C6A5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-content {
+    position: relative;
+}
+
+.strawberry {
+    position: absolute;
+    top: 0;
+    max-width: 100px;
+}
+
+.left-strawberry {
+    left: 0;
+}
+
+.right-strawberry {
+    right: 0;
+}
+
+.main-title h1 {
+    font-size: 50px;
+    color: white;
+    margin-top: 20px;
+}
+
+.start-btn {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Sections */
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.section .image {
+    flex: 1;
+    padding: 20px;
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.video-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Physical Strength Section */
+.physical-strength-section {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+.strength-header {
+    text-align: center;
+}
+
+.quest-potential {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.character-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.character-scenario {
+    text-align: center;
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+
+.character-scenario img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.pumpkin-decoration {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pumpkin {
+    width: 80px;
+    margin: 0 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-links.secondary a {
+    font-size: 14px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .quest-potential {
+        flex-direction: column;
+    }
+
+    .character-scenario {
+        flex-basis: 100%;
+    }
+
+    .social-icons a {
+        margin: 10px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
